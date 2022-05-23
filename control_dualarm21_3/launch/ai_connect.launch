@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="ai_connect" pkg="control_dualarm21_3" type="ai_connect" respawn="false" output="screen">
+  </node>
+
+</launch>

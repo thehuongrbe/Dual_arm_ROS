@@ -1,0 +1,17 @@
+<launch>
+  <!-- launch RealSense camera -->
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="align_depth" value="true" />
+    <arg name="color_width" value="640" />
+    <arg name="color_height" value="480" />
+    <arg name="color_fps" value="30" />
+    <arg name="depth_width" value="640" />
+    <arg name="depth_height" value="480" />
+    <arg name="depth_fps" value="30" />
+   </include>
+
+   <include file="$(find darknet_ros)/launch/darknet_ros.launch"/>
+
+   <node pkg="coordinate_estimation" type="coordinate_estimation" name="Coordinate_Estimation" output="screen"/>
+
+</launch>

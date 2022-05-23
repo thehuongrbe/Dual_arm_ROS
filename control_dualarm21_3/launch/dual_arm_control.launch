@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="dual_arm_control" pkg="control_dualarm21_3" type="dual_arm_control" respawn="false" output="screen">
+  </node>
+
+</launch>

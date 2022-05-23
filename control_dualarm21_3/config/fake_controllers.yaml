@@ -1,0 +1,43 @@
+controller_list:
+  - name: fake_l_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - joint_L1
+      - joint_L2
+      - joint_L3
+      - joint_L4
+      - joint_L5
+  - name: fake_r_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - joint_R1
+      - joint_R2
+      - joint_R3
+      - joint_R4
+      - joint_R5
+  - name: fake_l_end_controller
+    type: $(arg fake_execution_type)
+    joints:
+      []
+  - name: fake_r_end_controller
+    type: $(arg fake_execution_type)
+    joints:
+      []
+  - name: fake_dual_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - joint_L1
+      - joint_L2
+      - joint_L3
+      - joint_L4
+      - joint_L5
+      - joint_R1
+      - joint_R2
+      - joint_R3
+      - joint_R4
+      - joint_R5
+initial:  # Define initial robot poses.
+  - group: l_arm
+    pose: pose_init
+  - group: r_arm
+    pose: pose_init

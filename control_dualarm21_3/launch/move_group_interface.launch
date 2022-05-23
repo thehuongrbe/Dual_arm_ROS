@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="move_group_interface" pkg="control_dualarm21_3" type="move_group_node" respawn="false" output="screen">
+  </node>
+
+</launch>

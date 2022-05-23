@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="my_control_test" pkg="control_dualarm21_3" type="my_control_test" respawn="false" output="screen">
+  </node>
+
+</launch>
